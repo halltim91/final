@@ -17,6 +17,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -29,7 +30,7 @@ body {
   margin: auto 0px;
   font-size: 30px;
   font-weight: bolder;
-  font-family: "lucida console" monospace;
+  font-family: "lucida console", monospace;
 }
 
 .navbar .cbtoggle {
@@ -65,9 +66,7 @@ body {
 
   .navbar input[type=checkbox]:checked ~ .menu {
     display: block;
-    background-color: var(--fgrnd
-);
-    border: 1px red solid;
+    background-color: var(--fgrnd);
   }
 
   .navbar input[type=checkbox]:checked ~ .menu .navli {
@@ -111,5 +110,34 @@ body {
 
 .section {
   /* border: 1px red dashed; */
-  margin: 2vh 1vh;
+  margin: 2vh 2vh;
+}
+
+#aboutsec {
+  display: grid;
+  grid: 
+  'head head head'
+  'pic text text';
+  grid-template-columns: 1fr 2.5fr 2.5fr;
+  grid-template-rows: 1fr auto;
+}
+
+#aboutsec .sectHead {
+  grid-area: head;
+}
+
+#aboutsec .aboutme {
+  grid-area: text;
+  font-size: 18px;
+}
+
+.profilepic {
+  grid-area: pic;
+  justify-self: center;
+  align-self: center;
+  width: 80%;
+  height: 90%;
+  max-width: 200px;
+  max-height: 250px;
+  border-radius: 5%;
 }
