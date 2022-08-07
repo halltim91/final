@@ -91,6 +91,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   padding: 10px 5px;
+  border: 1px yellow dashed;
 }
 
 .navbar .navli:hover {
@@ -110,6 +111,13 @@ body {
 .section {
   /* border: 1px red dashed; */
   margin: 2vh 2vh;
+}
+
+h1 {
+  display:block;
+  margin-top: -100px;
+  padding-top: 100px;
+  font-size:xx-large;
 }
 
 /*************************************************
@@ -141,7 +149,7 @@ about me section
   width: 80%;
   height: auto;
   min-width: 150px;
-  max-width: 200px;
+  max-width: 250px;
   /* max-height: 250px; */
   border-radius: 5%;
 }
@@ -189,6 +197,7 @@ resume section
   color: var(--bkgrnd);
   border-radius: 10px;
   width: 333px;
+  min-width: 220px;
   padding: 1vw;
   margin: 20px;
   text-align: center;
@@ -206,4 +215,32 @@ resume section
 .workexperience .job *{
   margin: 0;
   padding: 0;
+}
+
+.projectdesc {
+  background-color: var(--fgrnd);
+  color: var(--bkgrnd);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.projlink a {
+  text-decoration: none;
+  color: white; 
+}
+
+.projlink a:hover {
+  color: var(--bkgrnd);
+  text-decoration: underline;
+}
+
+.projectdesc p a {
+  text-decoration: none;
+  color: white;
+}
+
+.projectdesc p a:hover {
+  /* color: var(--bkgrnd); */
+  text-decoration: underline;
 }
