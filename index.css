@@ -100,18 +100,21 @@ body {
 
 .navbar .navli a {
   text-decoration: none;
-  /* border: 1px red solid; */
 }
 
 .container {
   position: relative;
-  top: 10vh;
+  top: 15vh;
 }
 
 .section {
   /* border: 1px red dashed; */
   margin: 2vh 2vh;
 }
+
+/*************************************************
+about me section
+*************************************************/
 
 #aboutsec {
   display: grid;
@@ -136,8 +139,71 @@ body {
   justify-self: center;
   align-self: center;
   width: 80%;
-  height: 90%;
+  height: auto;
+  min-width: 150px;
   max-width: 200px;
-  max-height: 250px;
+  /* max-height: 250px; */
   border-radius: 5%;
+}
+
+/*************************************************
+resume section
+*************************************************/
+
+.mainarticle {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.subarticle {
+  margin: 0 5vw;
+}
+
+.education h2 {
+  text-align: center;
+}
+.education .school {
+  /* margin: 0 5vw; */
+}
+.education h2 {
+  width: 100%;
+  border: 1px red dashed;
+}
+
+.education .school * {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.skills {
+  justify-content: space-around;
+  width: 60%;
+  margin: 50px auto;
+}
+
+.skills .skillarticle {
+  display: block;
+  background-color: var(--fgrnd);
+  color: var(--bkgrnd);
+  border-radius: 10px;
+  width: 333px;
+  padding: 1vw;
+  margin: 20px;
+  text-align: center;
+}
+
+.skills .skillarticle .skilllist {
+  text-align: left;
+}
+
+.workexperience h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.workexperience .job *{
+  margin: 0;
+  padding: 0;
 }
