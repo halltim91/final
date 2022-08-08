@@ -131,8 +131,21 @@ about me section
   grid: 
   'head head head'
   'pic text text';
-  grid-template-columns: 1fr 2.5fr 2.5fr;
+  /* grid-template-columns: 1fr 1.5fr 1.5fr; */
   grid-template-rows: 1fr auto;
+  gap:  10px;
+  justify-items: center;
+  margin: auto;
+}
+
+@media (max-width: 768px){
+  #aboutsec {
+    grid:
+      'head'
+      'text'
+      'pic';
+
+  }
 }
 
 #aboutsec .sectHead {
@@ -142,18 +155,18 @@ about me section
 #aboutsec .aboutme {
   grid-area: text;
   font-size: 18px;
+  max-width: 1000px;
+  place-self: start;
 }
 
 .profilepic {
   grid-area: pic;
   justify-self: center;
-  align-self: center;
-  width: 80%;
+  align-self: end;
   height: auto;
-  min-width: 150px;
+  /* min-width: 150px; */
   max-width: 250px;
-  /* max-height: 250px; */
-  border-radius: 5%;
+  border-radius: 10px;
 }
 
 /*************************************************
