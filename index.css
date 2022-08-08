@@ -137,6 +137,11 @@ about me section
   justify-items: center;
   margin: auto;
 }
+@media(min-width: 768px){
+  #aboutsec {
+    margin: 0 5vw;
+  }
+}
 
 @media (max-width: 768px){
   #aboutsec {
@@ -144,12 +149,13 @@ about me section
       'head'
       'text'
       'pic';
-
   }
 }
 
 #aboutsec .sectHead {
   grid-area: head;
+  justify-self: start;
+  margin-left: 2vh;
 }
 
 #aboutsec .aboutme {
@@ -157,6 +163,7 @@ about me section
   font-size: 18px;
   max-width: 1000px;
   place-self: start;
+  margin: 0 5vw;
 }
 
 .profilepic {
@@ -269,6 +276,10 @@ resume section
 }
 
 .projectdesc p a:hover {
-  /* color: var(--bkgrnd); */
+  color: var(--bkgrnd);
   text-decoration: underline;
+}
+
+.last {
+  margin-bottom: 300px;
 }
