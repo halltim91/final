@@ -179,8 +179,16 @@ resume section
   justify-content: center;
 }
 
+
+
 .subarticle {
   margin: 0 5vw;
+}
+
+@media (max-width: 604px){
+  .subarticle {
+    margin: 5vw 5vw;
+  }
 }
 
 .education h2 {
@@ -189,6 +197,7 @@ resume section
 .education .school {
   /* margin: 0 5vw; */
 }
+
 .education h2 {
   width: 100%;
 }
@@ -226,6 +235,11 @@ resume section
   text-align: center;
 }
 
+@media (max-width: 604px){
+  .workexperience .job {
+    padding: 0 6vw;
+  }
+}
 .workexperience .job *{
   margin: 0;
   padding: 0;
