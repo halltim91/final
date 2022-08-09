@@ -4,12 +4,43 @@
 }
 
 body {
-  font-family: 'Arial', 'Helvetica','sans-serif';
+  font-family: "Arial", "Helvetica", "sans-serif";
   color: var(--fgrnd);
   background-color: var(--bkgrnd);
   margin: 0px;
   padding: 0px;
 }
+
+.container {
+  position: relative;
+  top: 15vh;
+}
+
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: 5vw 2vh;
+}
+
+h1 {
+  display: block;
+  margin-top: -100px;
+  padding-top: 100px;
+  font-size: xx-large;
+  margin-left: 10vw;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/*************************************************
+Nav BaR
+*************************************************/
 
 .navbar {
   background-color: var(--fgrnd);
@@ -48,20 +79,13 @@ body {
   font-family: "lucida console", monospace;
 }
 
-.navbar .cbtoggle {
-  display: none;
-  font-size: 24px;
-  user-select: none;
+.navbar .menu {
+  padding: 0;
+  margin: 0;
 }
 
 .navbar .hamburger {
   display: none;
-  font-size: 24px;
-}
-
-.navbar .menu {
-  padding: 0;
-  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -83,19 +107,14 @@ body {
     transition: 0.5s ease;
   }
 
-  .navbar input[type=checkbox]:checked ~ .menu {
-    display: block;
-    background-color: var(--fgrnd);
-  }
-
-  .navbar input[type=checkbox]:checked ~ .menu .navli {
-    display: block;
-  }
-
   .navbar .hamburger {
     display: block;
-    padding: 0px 10px;
-    border: 1px solid yellow;
+    color: var(--bkgrnd);
+    background-color: var(--fgrnd);
+    border: none;
+    font-size: 24px;
+    border: 1px solid orange;
+    margin-right: 2vw;
   }
 }
 
@@ -106,11 +125,9 @@ body {
   height: 100%;
 }
 
-/* @media (min-width: 768px){ */
-  .navbar .navlinks {
-    margin: 0;
-  }
-/* } */
+.navbar .navlinks {
+  margin: 0;
+}
 
 .navbar .navli {
   display: inline-block;
@@ -120,91 +137,16 @@ body {
 
 .navbar .navli:hover {
   background-color: var(--bkgrnd);
-  color: var(--fgrnd)
+  color: var(--fgrnd);
 }
 
 .navbar .navli a {
   text-decoration: none;
 }
 
-.container {
-  position: relative;
-  top: 15vh;
-}
-
-.section {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  margin: 5vw 2vh;
-}
-
-h1 {
-  display:block;
-  margin-top: -100px;
-  padding-top: 100px;
-  font-size:xx-large;
-  margin-left: 10vw;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    margin-left: 0;
-    text-align: center;
-  }
-}
-
 /*************************************************
 about me section
 *************************************************/
-
-/* #aboutsec {
-  display: grid;
-  grid: 
-  'head head head'
-  'pic text text';
-  grid-template-rows: 1fr auto;
-  gap:  10px;
-  justify-items: center;
-  margin: auto;
-}
-@media(min-width: 768px){
-  #aboutsec {
-    margin: 0 5vw;
-  }
-}
-
-@media (max-width: 768px){
-  #aboutsec {
-    grid:
-      'head'
-      'text'
-      'pic';
-  }
-}
-
-#aboutsec .sectHead {
-  grid-area: head;
-  justify-self: start;
-  margin-left: 2vh;
-}
-
-#aboutsec .aboutme {
-  grid-area: text;
-  font-size: 18px;
-  max-width: 1000px;
-  place-self: start;
-  margin: 0 5vw;
-}
-
-.profilepic {
-  grid-area: pic;
-  justify-self: center;
-  align-self: end;
-  height: auto;
-  max-width: 250px;
-  border-radius: 10px;
-} */
 
 #aboutsec {
   display: flex;
@@ -256,13 +198,11 @@ resume section
   justify-content: center;
 }
 
-
-
 .subarticle {
   margin: 0 5vw;
 }
 
-@media (max-width: 604px){
+@media (max-width: 604px) {
   .subarticle {
     margin: 5vw 5vw;
   }
@@ -270,9 +210,6 @@ resume section
 
 .education h2 {
   text-align: center;
-}
-.education .school {
-  /* margin: 0 5vw; */
 }
 
 .education h2 {
@@ -291,12 +228,12 @@ resume section
   margin: 50px auto;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .skills {
     width: 100%;
   }
 }
-@media (min-width: 768px) and (max-width: 1655px){
+@media (min-width: 768px) and (max-width: 1655px) {
   .skills {
     max-width: 975px;
   }
@@ -323,16 +260,15 @@ resume section
   text-align: center;
 }
 
-@media (max-width: 604px){
+@media (max-width: 604px) {
   .workexperience .job {
     padding: 0 6vw;
   }
 }
-.workexperience .job *{
+.workexperience .job * {
   margin: 0;
   padding: 0;
 }
-
 
 /*************************************************
 Project Section
@@ -349,7 +285,7 @@ Project Section
   align-self: center;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .projectdesc {
     width: 90%;
   }
@@ -357,7 +293,7 @@ Project Section
 
 .projlink a {
   text-decoration: none;
-  color: white; 
+  color: white;
 }
 
 .projlink a:hover {
