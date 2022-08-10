@@ -60,6 +60,7 @@ Nav BaR
   width: 100%;
   height: 100%;
   padding: 10px 5px;
+  color: var(--bkgrnd);
 }
 
 .navlink:visited {
@@ -112,8 +113,7 @@ Nav BaR
     color: var(--bkgrnd);
     background-color: var(--fgrnd);
     border: none;
-    font-size: 24px;
-    border: 1px solid orange;
+    font-size: 38px;
     margin-right: 2vw;
   }
 }
@@ -133,6 +133,7 @@ Nav BaR
   display: inline-block;
   vertical-align: middle;
   background-color: var(--fgrnd);
+  padding-right: 10px;
 }
 
 .navbar .navli:hover {
@@ -314,4 +315,72 @@ Project Section
 
 .last {
   margin-bottom: 300px;
+}
+
+/*************************************************
+Contact Section
+*************************************************/
+
+.form {
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--fgrnd);
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1000px;
+  padding: 2vw;
+}
+
+.label {
+  color: var(--bkgrnd);
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 15px;
+}
+
+.inlabel {
+  width: 20%;
+  margin-right: 5%;
+  max-width: 60px;
+}
+
+.input {
+  min-width: 250px;
+  max-width: 250px;
+  background-color: var(--fgrnd);
+  color: var(--bkgrnd);
+  border: 2px solid var(--bkgrnd);
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  .row {
+    flex-flow: row wrap;
+    width: 90%;
+  }
+}
+
+.textarea {
+  width: 90%;
+  height: 50%;
+  background-color: var(--fgrnd);
+  color: var(--bkgrnd);
+  border: 2px solid var(--bkgrnd);
+  padding: 5px;
+}
+
+.submit {
+  width: 10%;
+  min-width: 100px;
+  background-color: var(--bkgrnd);
+  color: var(--fgrnd);
+  border: none;
+  border-radius: 2px;
+  margin-top: 15px;
+  padding: 15px;
+  font-size: large;
 }

@@ -1,164 +1,222 @@
-
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Tim Hall - Home</title>
-      <link rel="stylesheet" href="index.css"/>
-      <script src="scripts.js" defer></script>
-    </head>
-    <body>
-      <nav class="navbar">
-        <div class="logo">TH</div>
-        <ul class="navlinks">
-          <button class="hamburger" id="hamburger">&#9776;</button>
-          <div class="menu" id="menu">
-            <li class="navli"><a class="navlink" href="#abouthead">About</a></li>
-            <li class="navli"><a class="navlink" href="#resumehead">Resume</a></li>
-            <li class="navli"><a class="navlink" href="#projecthead">Projects</a></li>
-            <li class="navli"><a class="navlink" href="#contacthead">Contact Me</a></li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim Hall - Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">TH</div>
+      <div class="navlinks">
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <ul class="menu" id="menu">
+          <li class="navli"><a class="navlink" href="#abouthead">About</a></li>
+          <li class="navli">
+            <a class="navlink" href="#resumehead">Resume</a>
+          </li>
+          <li class="navli">
+            <a class="navlink" href="#projecthead">Projects</a>
+          </li>
+          <li class="navli">
+            <a class="navlink" href="#contacthead">Contact Me</a>
+          </li>
         </ul>
-        </div>
-      </nav>
-
-      <div class="container">
-        
-        <section class="section" id="aboutsec">
-          <h1 class="sectHead" id="abouthead">About</h1>
-          <div class="aboutcontent">
-            <img class="img profilepic" alt="An image of Tim standing infront of old equiptment" src='images/me.jpg'/>
-            <p class="text aboutme">Timothy Hall is a current graduate student at Portland 
-              State University pursuing a M.S. in Computer Science with a focus on AI and 
-              machine learning. He earned a B.S. of Computer Science from Portland State.  
-              His journey down this path began back in 2013 where he self taught himself 
-              java and was instantly hooked. Years of making small games has evolved to 
-              becoming passionate about image processing and computer vision. In 2021 he 
-              lead the development of an image classifier for Sightline Applications to 
-              identify cars and people for onboard video surveillance systems.  Tim plans 
-              to contribute to projects for the medical field or self driving cars in the 
-              future. In his free time he makes things and spends time in the outdoors.
-            </p>
-          </div>
-        </section>
-
-        <section class="section" id="resumesec">
-          <h1 class="sectHead" id="resumehead">Resume</h1>
-          
-          <article class="mainarticle education">
-            <h2 class="articlehead">Education</h2>
-            <article class="subarticle school">
-              <h3 class="schoolname">Portland State University</h3>
-              <p>B.S. Computer Science</p>
-              <p>2018-2022</p>
-            </article>
-            <article class="subarticle school">
-              <h3 class="schoolname">Portland State University</h3>
-              <p>M.S. Computer Science</p>
-              <p>Focus: AI and Machine Learning</p>
-              <p>2022- Present</p>
-            </article>
-          </article>
-          
-          <div class="skills mainarticle">
-            <article class="skillarticle technicalskills">
-              <h2>Technical Skills</h2>
-              <ul class="skilllist">
-                <li>Object oriented design</li>
-                <li>Test driven development</li>
-                <li>Agile</li>
-                <li>Linux</li>
-                <li>OpenCV</li>
-                <li>Tensorflow</li>
-                <li>Docker</li>
-              </ul>
-            </article>
-            <article class="skillarticle softskills">
-              <h2>Soft Skills</h2>
-              <ul class="skilllist">
-                <li>Verbal and written communication</li>
-                <li>Leadership</li>
-                <li>Problem solving/crittical thinking</li>
-                <li>Initiative</li>
-                <li>Time management</li>
-                <li>Teamwork/collaboration</li>
-                <li>Self-driven</li>
-                <li>Emotional intelligence</li>
-                <li>Adaptability</li>
-                <li>Reliable</li>
-              </ul>
-            </article>
-            <article class="skillarticle languages">
-              <h2>Languages</h2>
-              <ul class="skilllist">
-                <li>English</li>
-                <li>C/C++</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>Rust</li>
-                <li>PostgreSql</li>
-                <li>HTML + CSS</li>
-                <li>Javascript</li>
-              </ul>
-            </article>
-            <article class="skillarticle interests">
-              <h2>Interests</h2>
-              <ul class="skilllist">
-                <li>Computer vision</li>
-                <li>Artificial intelligence</li>
-                <li>Image processing</li>
-                <li>Image filtering</li>
-                <li>Computational geometry</li>
-                <li>Procedural Generation</li>
-                <li>Genetic algorithms</li>
-              </ul>
-            </article>
-          </div>
-          
-          <div class="mainarticle workexperience">
-            <h2>Work Experience</h2>
-            <article class="subarticle job">
-              <h3>Cherry City Movers</h3>
-              <h4>Mover</h4>
-              <p>October 2021 - Present</p>
-            </article>
-
-            <article class="subarticle job">
-              <h3>US Army</h3>
-              <h4>Senior Vehicle Commander</h4>
-              <p>July 2010 - Dec 2017</p>
-            </article>
-          </div>
-         
-        </section>
-       
-        <section class="section" id="projectsec">
-          <h1 class="sectHead" id="projecthead">Projects</h1>
-          <article class="projectdesc">
-            <h2 class="projlink"><a href="https://github.com/halltim91/Median-Filter">Median Image Filter</a></h2>
-            <p>This project evaluates the performance of the median filter algorithm 
-              proposed in <a href="https://nomis80.org/ctmf.pdf"> Median Filtering in 
-              Constant Time</a>. The performance of my implementation of the constant 
-              time algorithm is compared against a similar O(n) algorithm the constant 
-              time one was adapted from and a trivial O(n<sup>2</sup>)-ish variation.
-              My results were conclusive even though my algorithm to calculate the mean
-              value was not constant time but rather O(n).  
-            </p>
-          </article>
-          <article class="projectdesc">
-            <h2 class="projlink"><a href="https://github.com/pdxsam2/CS300_frupal">Frupal Game</a></h2>
-            <p>Frupal is a python terminal game made for a software engineering class. Players wander
-              around an island to find gem stones using tools to overcome obsticals. The primary focus
-              of the project was working as a team to develop a project, as well as to familiarize ourselves
-              with the agile design process and project life cycle. 
-            </p>
-          </article>
-        </section>
-        <section class="section last" id="contactsec">
-          <h1 class="contactHead" id="contacthead">Contact Me</h1>
-
-        </section>
       </div>
-    </body>
-    </html>
+    </nav>
+
+    <div class="container">
+      <section class="section" id="aboutsec">
+        <h1 class="sectHead" id="abouthead">About</h1>
+        <div class="aboutcontent">
+          <img
+            class="img profilepic"
+            alt="An image of Tim standing infront of old equiptment"
+            src="images/me.jpg"
+          />
+          <p class="text aboutme">
+            Timothy Hall is a current graduate student at Portland State
+            University pursuing a M.S. in Computer Science with a focus on AI
+            and machine learning. He earned a B.S. of Computer Science from
+            Portland State. His journey down this path began back in 2013 where
+            he self taught himself java and was instantly hooked. Years of
+            making small games has evolved to becoming passionate about image
+            processing and computer vision. In 2021 he lead the development of
+            an image classifier for Sightline Applications to identify cars and
+            people for onboard video surveillance systems. Tim plans to
+            contribute to projects for the medical field or self driving cars in
+            the future. In his free time he makes things and spends time in the
+            outdoors.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="resumesec">
+        <h1 class="sectHead" id="resumehead">Resume</h1>
+
+        <article class="mainarticle education">
+          <h2 class="articlehead">Education</h2>
+          <article class="subarticle school">
+            <h3 class="schoolname">Portland State University</h3>
+            <p>B.S. Computer Science</p>
+            <p>2018-2022</p>
+          </article>
+          <article class="subarticle school">
+            <h3 class="schoolname">Portland State University</h3>
+            <p>M.S. Computer Science</p>
+            <p>Focus: AI and Machine Learning</p>
+            <p>2022- Present</p>
+          </article>
+        </article>
+
+        <div class="skills mainarticle">
+          <article class="skillarticle technicalskills">
+            <h2>Technical Skills</h2>
+            <ul class="skilllist">
+              <li>Object oriented design</li>
+              <li>Test driven development</li>
+              <li>Agile</li>
+              <li>Linux</li>
+              <li>OpenCV</li>
+              <li>Tensorflow</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+          <article class="skillarticle softskills">
+            <h2>Soft Skills</h2>
+            <ul class="skilllist">
+              <li>Verbal and written communication</li>
+              <li>Leadership</li>
+              <li>Problem solving/crittical thinking</li>
+              <li>Initiative</li>
+              <li>Time management</li>
+              <li>Teamwork/collaboration</li>
+              <li>Self-driven</li>
+              <li>Emotional intelligence</li>
+              <li>Adaptability</li>
+              <li>Reliable</li>
+            </ul>
+          </article>
+          <article class="skillarticle languages">
+            <h2>Languages</h2>
+            <ul class="skilllist">
+              <li>English</li>
+              <li>C/C++</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>Rust</li>
+              <li>PostgreSql</li>
+              <li>HTML + CSS</li>
+              <li>Javascript</li>
+            </ul>
+          </article>
+          <article class="skillarticle interests">
+            <h2>Interests</h2>
+            <ul class="skilllist">
+              <li>Computer vision</li>
+              <li>Artificial intelligence</li>
+              <li>Image processing</li>
+              <li>Image filtering</li>
+              <li>Computational geometry</li>
+              <li>Procedural Generation</li>
+              <li>Genetic algorithms</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="mainarticle workexperience">
+          <h2>Work Experience</h2>
+          <article class="subarticle job">
+            <h3>Cherry City Movers</h3>
+            <h4>Mover</h4>
+            <p>October 2021 - Present</p>
+          </article>
+
+          <article class="subarticle job">
+            <h3>US Army</h3>
+            <h4>Senior Vehicle Commander</h4>
+            <p>July 2010 - Dec 2017</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projectsec">
+        <h1 class="sectHead" id="projecthead">Projects</h1>
+        <article class="projectdesc">
+          <h2 class="projlink">
+            <a href="https://github.com/halltim91/Median-Filter"
+              >Median Image Filter</a
+            >
+          </h2>
+          <p>
+            This project evaluates the performance of the median filter
+            algorithm proposed in
+            <a href="https://nomis80.org/ctmf.pdf">
+              Median Filtering in Constant Time</a
+            >. The performance of my implementation of the constant time
+            algorithm is compared against a similar O(n) algorithm the constant
+            time one was adapted from and a trivial O(n<sup>2</sup>)-ish
+            variation. My results were conclusive even though my algorithm to
+            calculate the mean value was not constant time but rather O(n).
+          </p>
+        </article>
+        <article class="projectdesc">
+          <h2 class="projlink">
+            <a href="https://github.com/pdxsam2/CS300_frupal">Frupal Game</a>
+          </h2>
+          <p>
+            Frupal is a python terminal game made for a software engineering
+            class. Players wander around an island to find gem stones using
+            tools to overcome obsticals. The primary focus of the project was
+            working as a team to develop a project, as well as to familiarize
+            ourselves with the agile design process and project life cycle.
+          </p>
+        </article>
+      </section>
+      <section class="section last" id="contactsec">
+        <h1 class="contactHead" id="contacthead">Contact Me</h1>
+        <form class="form" action="">
+          <div class="row">
+            <label class="label inlabel" for="name">Name</label>
+            <input
+              class="input"
+              id="name"
+              name="name"
+              type="text"
+              required="required"
+              tabindex="0"
+            />
+          </div>
+          <div class="row">
+            <label class="label inlabel" for="email">Email</label>
+            <input
+              class="input"
+              id="email"
+              name="email"
+              type="email"
+              required="required"
+            />
+          </div>
+          <label class="label" for="message">Message</label>
+          <textarea
+            class="textarea"
+            id="message"
+            name="message"
+            rows="5"
+            cols="5"
+          ></textarea>
+          <input
+            class="submit"
+            type="submit"
+            id="submit"
+            name="submit"
+            value="Submit"
+          />
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
